@@ -1,0 +1,182 @@
+# Starship Configuration - Premium & Refined
+# Enhanced gradient design with better visual hierarchy and performance
+
+format = """
+[](#cba6f7)\
+$os\
+$username\
+[](bg:#f5c2e7 fg:#cba6f7)\
+$directory\
+[](fg:#f5c2e7 bg:#89b4fa)\
+$git_branch\
+$git_status\
+[](fg:#89b4fa bg:#74c7ec)\
+$c\
+$golang\
+$java\
+$nodejs\
+$python\
+$rust\
+$deno\
+[](fg:#74c7ec bg:#94e2d5)\
+$docker_context\
+$kubernetes\
+[](fg:#94e2d5 bg:#45475a)\
+$cmd_duration\
+$battery\
+$time\
+[](fg:#45475a)\
+$line_break$character"""
+
+# Enhanced startup performance
+add_newline = false
+command_timeout = 2000
+scan_timeout = 50
+
+# Enhanced username display with refined styling
+[username]
+show_always = true
+style_user = "bg:#cba6f7 fg:#1e1e2e bold"
+style_root = "bg:#f38ba8 fg:#1e1e2e bold"
+format = '[ $user ]($style)'
+disabled = false
+
+# Operating system detection (optional)
+[os]
+style = "bg:#cba6f7 fg:#1e1e2e bold"
+format = "[ $symbol ]($style)"
+disabled = true
+
+[directory]
+style = "bg:#f5c2e7 fg:#1e1e2e bold"
+format = "[  $path ]($style)"
+truncation_length = 4
+truncation_symbol = "…/"
+home_symbol = "󰋜 ~"
+read_only = " 󰌾"
+read_only_style = "bg:#f5c2e7 fg:#f38ba8"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Desktop" = "󰧨 "
+"Projects" = "󰲋 "
+".config" = " "
+
+[git_branch]
+symbol = " "
+style = "bg:#89b4fa fg:#1e1e2e bold"
+format = '[ $symbol$branch ]($style)'
+
+[git_status]
+style = "bg:#89b4fa fg:#1e1e2e"
+format = '[$all_status$ahead_behind ]($style)'
+conflicted = "󰞇 ${count}"
+deleted = " ${count}"
+modified = "󱇨 ${count}"
+renamed = "󰑕 ${count}"
+staged = " ${count}"
+untracked = " ${count}"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+
+[c]
+symbol = " "
+style = "bg:#74c7ec fg:#1e1e2e bold"
+format = '[ $symbol$version ]($style)'
+detect_extensions = ["c", "h"]
+
+[golang]
+symbol = " "
+style = "bg:#74c7ec fg:#1e1e2e bold"
+format = '[ $symbol$version ]($style)'
+detect_extensions = ["go"]
+
+[java]
+symbol = " "
+style = "bg:#74c7ec fg:#1e1e2e bold"
+format = '[ $symbol$version ]($style)'
+detect_extensions = ["java", "class", "jar"]
+
+[nodejs]
+symbol = " "
+style = "bg:#74c7ec fg:#1e1e2e bold"
+format = '[ $symbol$version ]($style)'
+detect_files = ["package.json", ".nvmrc"]
+
+[python]
+symbol = " "
+style = "bg:#74c7ec fg:#1e1e2e bold"
+format = '[ $symbol$version ]($style)'
+detect_extensions = ["py"]
+python_binary = ["python", "python3", "python2"]
+
+[rust]
+symbol = " "
+style = "bg:#74c7ec fg:#1e1e2e bold"
+format = '[ $symbol$version ]($style)'
+detect_extensions = ["rs"]
+
+[deno]
+symbol = "🦕 "
+style = "bg:#74c7ec fg:#1e1e2e bold"
+format = '[ $symbol$version ]($style)'
+detect_extensions = ["ts", "tsx", "js"]
+
+[docker_context]
+symbol = " "
+style = "bg:#94e2d5 fg:#1e1e2e bold"
+format = '[ $symbol$context ]($style)'
+only_with_files = true
+
+[kubernetes]
+symbol = "󱃾 "
+style = "bg:#94e2d5 fg:#1e1e2e bold"
+format = '[ $symbol$context ]($style)'
+disabled = false
+
+[cmd_duration]
+min_time = 2_000
+style = "bg:#45475a fg:#f9e2af bold"
+format = '[ 󰔛 $duration ]($style)'
+
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+unknown_symbol = "󰁽 "
+empty_symbol = "󰂎 "
+format = "[ $symbol$percentage ]($style)"
+
+[[battery.display]]
+threshold = 20
+style = "bg:#45475a fg:#f38ba8 bold"
+
+[[battery.display]]
+threshold = 50
+style = "bg:#45475a fg:#fab387 bold"
+
+[[battery.display]]
+threshold = 100
+style = "bg:#45475a fg:#a6e3a1 bold"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#45475a fg:#cdd6f4 bold"
+format = '[ 󰅐 $time ]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[❯](bold #a6e3a1)'
+error_symbol = '[❯](bold #f38ba8)'
+vimcmd_symbol = '[❮](bold #fab387)'
+vimcmd_replace_one_symbol = '[❮](bold #f5c2e7)'
+vimcmd_replace_symbol = '[❮](bold #f5c2e7)'
+vimcmd_visual_symbol = '[❮](bold #cba6f7)'

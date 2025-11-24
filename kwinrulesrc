@@ -1,0 +1,59 @@
+[4dd9326f-a99a-4954-80fd-3f97564a24ac]
+Description=Settings for systemsettings systemsettings
+opacityactive=82
+opacityactiverule=2
+opacityinactive=73
+opacityinactiverule=2
+wmclass=systemsettings systemsettings
+wmclasscomplete=true
+wmclassmatch=1
+
+[69c3ddb8-0b79-4e0b-bc51-549526c240a4]
+Description=Settings for brave brave-pjibgclleladliembfgfagdaldikeohf-Default
+opacityactive=82
+opacityactiverule=2
+opacityinactive=79
+opacityinactiverule=2
+wmclass=brave brave-pjibgclleladliembfgfagdaldikeohf-Default
+wmclasscomplete=true
+wmclassmatch=1
+
+[8f43be75-497c-4be5-b171-9d6dffb74a45]
+Description=Settings for brave brave-browser
+opacityactive=90
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=brave brave-browser
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=5
+rules=69c3ddb8-0b79-4e0b-bc51-549526c240a4,f7c2763b-b983-4e4d-a6b9-0c73b658bd2a,4dd9326f-a99a-4954-80fd-3f97564a24ac,8f43be75-497c-4be5-b171-9d6dffb74a45,fe857b55-ccaa-42bd-a88c-70eed3429c2b
+
+[f7c2763b-b983-4e4d-a6b9-0c73b658bd2a]
+Description=Settings for code Code
+opacityactive=91
+opacityactiverule=2
+opacityinactive=83
+opacityinactiverule=2
+wmclass=code Code
+wmclasscomplete=true
+wmclassmatch=1
+
+[f90a384f-9e97-454e-8781-f46c0e30c0dc]
+opacityactive=87
+opacityactiverule=2
+opacityinactive=79
+opacityinactiverule=2
+
+[fe857b55-ccaa-42bd-a88c-70eed3429c2b]
+Description=Settings for vesktop
+opacityactive=92
+opacityactiverule=2
+opacityinactive=87
+opacityinactiverule=2
+wmclass=vesktop
+wmclasscomplete=true
+wmclassmatch=1

@@ -1,0 +1,67 @@
+# Glassy Frost - Vibrant Dark Theme for btop
+# Matches your new Kitty terminal theme
+
+# Main background and foreground
+theme[main_bg]="#0a0a0f"
+theme[main_fg]="#f8f8f2"
+
+# Highlighted elements
+theme[title]="#ff79c6"
+theme[hi_fg]="#8be9fd"
+theme[selected_bg]="#44475a"
+theme[selected_fg]="#ff79c6"
+theme[inactive_fg]="#6272a4"
+
+# Graphs and meters
+theme[proc_misc]="#8be9fd"
+theme[cpu_box]="#ff79c6"
+theme[mem_box]="#50fa7b"
+theme[net_box]="#f1fa8c"
+theme[proc_box]="#8be9fd"
+theme[div_line]="#44475a"
+
+# Graph colors (vibrant gradients)
+theme[graph_text]="#f8f8f2"
+theme[meter_bg]="#44475a"
+theme[used_start]="#ff5555"
+theme[used_mid]="#ff79c6"
+theme[used_end]="#bd93f9"
+theme[available_start]="#50fa7b"
+theme[available_mid]="#8be9fd"
+theme[available_end]="#f1fa8c"
+
+# Process list colors
+theme[process_start]="#ff79c6"
+theme[process_mid]="#8be9fd"
+theme[process_end]="#50fa7b"
+
+# Temperature colors
+theme[temp_start]="#50fa7b"
+theme[temp_mid]="#f1fa8c"
+theme[temp_end]="#ff5555"
+
+# CPU graph
+theme[cpu_start]="#8be9fd"
+theme[cpu_mid]="#ff79c6"
+theme[cpu_end]="#ff5555"
+
+# Memory graph
+theme[mem_start]="#50fa7b"
+theme[mem_mid]="#f1fa8c"
+theme[mem_end]="#ff79c6"
+
+# Network graph
+theme[download_start]="#8be9fd"
+theme[download_mid]="#50fa7b"
+theme[download_end]="#f1fa8c"
+theme[upload_start]="#ff79c6"
+theme[upload_mid]="#bd93f9"
+theme[upload_end]="#ff5555"
+
+# Additional UI elements
+theme[symbol]="#8be9fd"
+theme[symbol_on]="#50fa7b"
+theme[inactive]="#6272a4"
+theme[gradient_start]="#ff79c6"
+theme[gradient_mid]="#8be9fd"
+theme[gradient_end]="#50fa7b"
