@@ -14,7 +14,13 @@ Contents
 
 Screenshots
 
-#file:Screenshots
+Below are screenshots from this configuration. Click any image to view full-size.
+
+![ss1](Screenshots/ss1.png)
+
+![ss2](Screenshots/ss2.png)
+
+![ss3](Screenshots/ss3.png)
 
 Usage
 - Inspect the files and copy the ones you want into your home configuration
